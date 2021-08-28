@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- to learn about forms and input tags -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- shortucuts used
+    ctrl+shift ke bagal wala slash to comment
+alt + shift+ downward arrow to copy the same line downwards
+if you want to write the same thing in differenet lines then click at those places by holding alt u can write saath me
+ ek line ko upar neeche le jana ho to alt+ arrow keys
+ek line me se sidha neeche aana ho bina end tag ko chede to ctrl+enter-->
+
+    <form action="backend.php">
+        <!-- label ka bas itna use hota hai ki agar naam par click karege to jisme detail bharni hai wo highlight ho jayega
+        aur label ke for me jo naam hai vohi id me hota hai aur jo name me hai wo hamare backend me dikhta hai jsime hamara
+    enter kiya hua data dikhta hai  -->
+        <label for="name">name</label>
+        <div>
+            <!-- shortcut for input is just type input:(jo bhi type chahiye) and enter jese input:text -->
+            <!-- text email number checkbox date radio -->
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="myrole" id="role">
+        </div>
+        <br>
+        <label for="email">email</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <br>
+        <label for="tarik">date</label>
+        <div>
+            <input type="date" name="mydate" id="tarik">
+        </div>
+        <br>
+        <div>
+            bonus: <input type="number" name="mybonus">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+            other<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            write about your self <br> <textarea name="mytext" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <!-- select wala banane ke liye -->
+        <div>
+            <label for="car">car</label>
+            <select name="mycar" id="car">
+                <option value="default" checked>select</option>
+                <option value="ind">indica</option>
+                <option value="swf">swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            read all the rules and i agree <input type="checkbox" name="eligibility" checked>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset">
+    </form>
+
+</body>
+
+</html>
